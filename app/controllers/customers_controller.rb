@@ -3,6 +3,7 @@ class CustomersController < ApplicationController
     @customers = Customer.all
   end
 
+  # Add new actions according on routers.
   def index_1
     @customers = Customer.all.order(:full_name)
   end
