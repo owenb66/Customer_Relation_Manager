@@ -12,7 +12,8 @@ ActiveAdmin.register Customer do
     f.inputs          # builds an input field for every attribute
 
     f.inputs do
-      f.input :image, as: :file
+      f.input :image, as:   :file,
+                      hint: f.object.image.present? ? image_tag(f.object.image, size: "100x100") : ""
     end
 
     f.actions         # adds the 'Submit' and 'Cancel' buttons
