@@ -9,6 +9,7 @@
 Customer.destroy_all
 AdminUser.destroy_all
 
+# Generate 6 customers using fake
 # NUMBER_OF_CUSTOMERS = 6
 6.times do
   customer = Customer.create(
