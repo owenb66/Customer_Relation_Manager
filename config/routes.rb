@@ -3,6 +3,7 @@ Rails.application.routes.draw do
   ActiveAdmin.routes(self)
   # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
 
+  # Define applicaiton routers.
   get "/", to: "customers#index"
   get "/customers/missing_email", to: "customers#missing_email"
   get "/customers/alphabetized", to: "customers#index_1"
